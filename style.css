@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body{
+    font-family: 'Inter';
+    margin: 0;
+    margin-bottom: 50px;
+}
+header{
+    height: 60px;
+    font-size: 26px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.capa-center{
+    display: flex;
+    justify-content: center;
+}
+.capa{
+    background-color: #f0f0f0;
+    background-image: url(img/capa.jpg);
+    background-size: cover;
+    width: 95%;
+    height: 250px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.capa span{
+    background-color: green;
+    border-radius: 7px;
+    padding: 3px 7px;
+    color: white;
+    margin-top: 8px;
+    font-size: 14px;
+}
+#logo{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+#logo:hover{
+    transition: 0.3s;
+    scale: 105%;
+}
+#menu{
+    margin: 15px 10px;
+}
+#menu main{
+    display: grid;
+    grid-column: 1;
+    place-content: center;
+    max-width: 80rem;
+    gap: 15px;
+}
+.produto{
+    display: flex;
+    gap: 8px;
+}
+.produto img{
+    height: 120px;
+    width: auto;
+    border-radius: 15px;
+}
+.descricao span{
+    font-weight: 700;
+    font-size: medium;
+}
+.descricao p{
+    font-size: small;
+}
+.add{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.add p{
+   font-weight: 700;
+   font-size: medium;
+}
+.add div{
+   background-color: black;
+   border-radius: 7px;
+   width: fit-content;
+   padding: 5px 9px;
+   cursor: pointer;
+   color: white;
+}
+.modal-bg{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    background-color: white;
+    border-radius: 7px;
+    padding: 15px;
+    min-width: 90%;
+}
+.modal h2{
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.modal div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.modal p{
+    font-weight: 700;
+}
+.modal input{
+    margin-top: -5px;
+    width: 95%;
+    border: solid 1px #f0f0f0;
+    padding: 10px;
+    font-family: 'Inter';
+    border-radius: 7px;
+}
+.modal div .finalizar{
+    background-color: green;
+    color: white;
+    padding: 5px 8px;
+    width: fit-content;
+    border-radius: 7px;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    background-color: rgb(250, 35, 35);
+    padding: 13px 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+footer div{
+    font-weight: 700;
+}
+
+@media (min-width:768px) {
+    #menu main{
+        grid-template-columns: repeat(auto-fit, 500px);
+    }
+    .modal{
+        min-width: 600px;
+    }
+}

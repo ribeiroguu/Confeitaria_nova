@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confeitaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Confeitaria</header>
+    <div class="capa-center">
+        <div class="capa">
+            <img id="logo" src="img/logo.jpg">
+            <span>Seg á Sex - 07:00 ás 18:00</span>
+        </div>
+    </div>
+
+    <div id="menu">
+        <main>
+            <div class="produto">
+                <img src="img/logo.jpg">
+                <div class="descricao">
+                    <span>Bolinho</span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit error</p>
+
+                    <div class="add">
+                        <p>R$10.00</p>
+                        <div data-name="Bolinho" data-price="10.00">ADD</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+                <img src="img/logo.jpg">
+                <div class="descricao">
+                    <span>Bolinho</span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit error</p>
+
+                    <div class="add">
+                        <p>R$10.00</p>
+                        <div data-name="Bolinho" data-price="10.00">ADD</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+                <img src="img/logo.jpg">
+                <div class="descricao">
+                    <span>Bolinho</span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit error</p>
+
+                    <div class="add">
+                        <p>R$10.00</p>
+                        <div data-name="Bolinho" data-price="10.00">ADD</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produto">
+                <img src="img/logo.jpg">
+                <div class="descricao">
+                    <span>Bolinho</span>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit error</p>
+
+                    <div class="add">
+                        <p>R$10.00</p>
+                        <div data-name="Bolinho" data-price="10.00">ADD</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="modal-bg">
+        <div class="modal">
+            <h2>Meu carrinho</h2>
+            <div id="cart-items"></div>
+            <p>Total: <span id="cart-total">0.00</span></p>
+            <p style="margin-top: 25px;">Endereço de entrega:</p>
+            <input type="text" placeholder="Digite seu endereço" id="endereco">
+            <p style="color: red; display: none;">Digite seu endereço completo</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 15px; width: 100%; flex-direction: row;">
+                <div class="fechar" style="cursor: pointer;">Fechar</div>
+                <div class="finalizar">Finalizar pedido</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="cart-btn">
+            (<span id="contador">2</span>) Veja meu carrinho
+        </div>
+    </footer>
+</body>
+</html>
