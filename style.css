@@ -118,9 +118,6 @@ header{
     margin-bottom: 10px;
     flex-direction: column;
 }
-.modal p{
-    font-weight: 700;
-}
 .modal input{
     margin-top: -5px;
     width: 95%;
@@ -137,7 +134,37 @@ header{
     border-radius: 7px;
     cursor: pointer;
 }
-footer{
+#cart-items{
+    max-height: 250px;
+    overflow: auto;
+}
+.produto-modal{
+    display: flex;
+    align-items: center;
+}
+.produto-info{
+    width: fit-content;
+    display: flex;
+    justify-content:left;
+    align-items: baseline;
+}
+.item-nome{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.item-quantidade{
+    margin: 0;
+}
+.item-preco{
+    margin: 5px;
+}
+.remover{
+    cursor: pointer;
+    color: red;
+    margin-left: 10px;
+    width: fit-content;
+}
+footer div{
     width: 100%;
     background-color: rgb(250, 35, 35);
     padding: 13px 0;
@@ -149,8 +176,6 @@ footer{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
-footer div{
     font-weight: 700;
 }
 
